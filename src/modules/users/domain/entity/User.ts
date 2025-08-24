@@ -1,5 +1,6 @@
 export default class User {
     id?: number
+    email: string
     username: string
     password: string
     createdAt: Date
@@ -11,6 +12,7 @@ export default class User {
 
         return new User(
             undefined,
+            props.email,
             props.username,
             props.password,
             now, now,
@@ -18,8 +20,9 @@ export default class User {
         )
     }
 
-    constructor(id: number | undefined, username: string, password: string, createdAt: Date, updatedAt: Date, deletedAt: Date | null) {
+    constructor(id: number | undefined, email: string, username: string, password: string, createdAt: Date, updatedAt: Date, deletedAt: Date | null) {
         this.id = id
+        this.email = email
         this.username = username
         this.password = password
         this.createdAt = createdAt

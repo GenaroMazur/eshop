@@ -1,5 +1,5 @@
 import { Channel, ChannelModel, connect } from "amqplib";
-import ApplicationModule from "../../domain/interfaces/ApplicationModule";
+import ApplicationModule from "../../share/interfaces/ApplicationModule";
 import { logger } from "../../utils/logger";
 
 export default class RabbitMqConnection implements ApplicationModule {

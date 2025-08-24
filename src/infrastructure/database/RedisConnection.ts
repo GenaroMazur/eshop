@@ -1,5 +1,5 @@
 import Redis from "ioredis";
-import ApplicationModule from "../../domain/interfaces/ApplicationModule";
+import ApplicationModule from "../../share/interfaces/ApplicationModule";
 import { logger } from "../../utils/logger";
 
 export default class RedisConnection implements ApplicationModule {

@@ -1,4 +1,4 @@
-import ApplicationModule from "../domain/interfaces/ApplicationModule";
+import ApplicationModule from "../share/interfaces/ApplicationModule";
 import { logger } from "../utils/logger";
 import RedisConnection from "./database/RedisConnection";
 import RabbitMqConnection from "./queue/RabbitMqConnection";

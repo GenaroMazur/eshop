@@ -1,5 +1,5 @@
 // eslint-disable-next-line hexagonal-architecture/enforce
-import ApplicationModule from "../domain/interfaces/ApplicationModule";
+import ApplicationModule from "../share/interfaces/ApplicationModule";
 import { logger } from "./logger";
 
 export function CloseProcessCallback(applicationModule: ApplicationModule) {
