@@ -4,5 +4,5 @@ export default abstract class UserAbstractUseCase {
     constructor(protected readonly userRepository: UserRepository) {
     }
 
-    abstract execute(): Promise<any>;
+    abstract execute(...args: any[]): Promise<any>;
 }
