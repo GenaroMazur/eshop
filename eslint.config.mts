@@ -3,7 +3,6 @@ import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
 
 const eslintPluginPrettierRecommended = require('eslint-plugin-prettier/recommended');
-const hexagonalArchitecturePlugin = require('eslint-plugin-hexagonal-architecture');
 
 export default [
     {files: ["**/*.{js,mjs,cjs,ts}"]},
@@ -18,15 +17,5 @@ export default [
     },
     pluginJs.configs.recommended,
     ...tseslint.configs.recommended,
-    eslintPluginPrettierRecommended,
-    {
-        files: ['src/**/*.ts'],
-        ignores:["**/index.ts","**/di.container.ts"],
-        plugins: {
-            'hexagonal-architecture': hexagonalArchitecturePlugin,
-        },
-        rules: {
-            'hexagonal-architecture/enforce': ['warn'],
-        },
-    }
+    eslintPluginPrettierRecommended
 ];
